@@ -1,2 +1,3 @@
-# AngularTuduApp
-[Open](https://angular-tu-du-app.vercel.app)
+# github-rzgucu-acejmf
+
+[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/github-rzgucu-acejmf)
