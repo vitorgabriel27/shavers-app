@@ -1,0 +1,50 @@
+<ion-header class="ion-text-center">
+  <ion-toolbar color="light">
+    <ion-title><strong>Conta</strong></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="secondary">
+  <ion-toolbar color="secondary">
+    <ion-title></ion-title>
+    <div class="container w-100">
+      <button
+        class="btn btn-primary btn-shadow btn-style justify-center"
+        style="background-color: var(--ion-color-tertiary)"
+      >
+        <strong>VER PERFIL</strong>
+      </button>
+    </div>
+  </ion-toolbar>
+
+  <ion-content color="secondary">
+    <ion-toolbar color="secondary">
+      <div
+        style="background-color: var(--ion-color-secondary)"
+        class="list-style"
+      >
+        <ion-list color="secondary">
+          <ion-item button *ngFor="let value of menu">
+            <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
+            <ion-label>{{value.title}}</ion-label>
+          </ion-item>
+        </ion-list>
+      </div>
+    </ion-toolbar>
+  </ion-content>
+
+  <ion-toolbar>
+    <ion-item button>
+      <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
+      <ion-label color="warning"><strong>Encerrar Sessão</strong></ion-label>
+    </ion-item>
+  </ion-toolbar>
+
+  <ion-footer color="secondary">
+    <ion-toolbar color="secondary">
+      <ion-title color="dark" size="small" class="ion-text-center">
+        v.1.0.0</ion-title
+      >
+    </ion-toolbar>
+  </ion-footer>
+</ion-content>

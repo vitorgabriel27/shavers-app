@@ -1,0 +1,67 @@
+<ion-header color="light">
+  <ion-toolbar color="light">
+    <ion-title class="ion-text-center">
+      <strong>Agenda</strong>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="secondary">
+  <ion-header>
+    <ion-toolbar color="secondary">
+      <ion-title size="small" color="dark">Hoje</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-toolbar color="secondary">
+    <ion-card *ngFor="let value of schedules">
+      <ion-card-header>
+        <div class="container">
+          <ion-card-title style="font-size: 15px">
+            <strong>{{value.title}}</strong>
+          </ion-card-title>
+          <button color="light" style="background-color: #fff">
+            <ion-icon src="/assets/Group357.svg" color="dark"></ion-icon>
+          </button>
+        </div>
+        <div class="container">
+          <ion-card-subtitle>Status: {{value.status}}</ion-card-subtitle>
+          <ion-card-subtitle>Status: {{value.locale}}</ion-card-subtitle>
+        </div>
+      </ion-card-header>
+
+      <ion-card-content>
+        <table
+          class="table"
+          style="font-size: 12px; color: var(--ion-color-medium)"
+        >
+          <tr>
+            <th>Data</th>
+            <th>Hora</th>
+            <th>Serviço</th>
+            <th>Trajeto</th>
+          </tr>
+          <tr>
+            <td>{{value.data}}</td>
+            <td>{{value.time}}</td>
+            <td>{{value.price}}</td>
+            <td>{{value.transp}}</td>
+          </tr>
+        </table>
+        <div class="dropdown-divider"></div>
+        <div class="container">
+          <ion-item>
+            <ion-avatar slot="start">
+              <img src="{{value.imgUrl}}" />
+            </ion-avatar>
+            <ion-label>
+              <h4>{{value.name}}</h4>
+              <p>{{value.city}}</p>
+            </ion-label>
+          </ion-item>
+
+          <button class="btn btn-style">Ver Perfil</button>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </ion-toolbar>
+</ion-content>

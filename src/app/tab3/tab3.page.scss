@@ -1,0 +1,30 @@
+table td,
+table th {
+  border: none !important;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  padding: 2%;
+
+  .btn-style {
+    margin: 5%;
+    background-color: #fff;
+    color: var(--ion-color-dark);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+
+  ion-label {
+    h4 {
+      font-size: 13px;
+    }
+    p {
+      font-size: 11px;
+    }
+  }
+}
