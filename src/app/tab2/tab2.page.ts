@@ -40,4 +40,20 @@ export class Tab2Page {
       price: 'R$ 68,00',
     },
   ];
+
+  public categories = [
+    {
+      url: 'https://downloadcursos.top/wp-content/uploads/2020/07/barbeiro-profissional.jpg',
+      st: 'Degradê Navalhado',
+    },
+    {
+      url: 'https://www.nucleocursos.com.br/uploads/cursos/thumbs/600x415-barbeiro-profissional2.jpg',
+      st: 'Degradê Navalhado',
+    },
+    {
+      url: 'https://downloadcursos.top/wp-content/uploads/2020/07/barbeiro-profissional.jpg',
+      st: 'Degradê Navalhado',
+    },
+    
+  ];
 }

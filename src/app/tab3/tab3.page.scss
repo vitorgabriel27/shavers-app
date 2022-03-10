@@ -9,6 +9,9 @@ table th {
   justify-content: space-between;
   padding: 2%;
 
+  .profile {
+    margin: 5px;
+  }
   .btn-style {
     margin: 5%;
     background-color: #fff;
@@ -19,6 +22,14 @@ table th {
     font-size: 12px;
   }
 
+  .no-border:focus{
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+  }
+  .dot-side:hover{
+  
+  }
   ion-label {
     h4 {
       font-size: 13px;

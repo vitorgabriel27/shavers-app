@@ -8,27 +8,4 @@ import { Component } from '@angular/core';
 export class Tab4Page {
   constructor() {}
 
-  public menu = [
-    {
-      title: 'Informações',
-    },
-    {
-      title: 'Chave Pix',
-    },
-    {
-      title: 'Endereço',
-    },
-    {
-      title: 'Porfólio',
-    },
-    {
-      title: 'Serviços',
-    },
-    {
-      title: 'Disponibilidade',
-    },
-    {
-      title: 'Politicas e Termos de Uso',
-    },
-  ];
 }

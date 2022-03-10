@@ -9,7 +9,7 @@
 <ion-content color="secondary">
   <ion-header>
     <ion-toolbar color="secondary">
-      <ion-title size="small" color="dark">Hoje</ion-title>
+      <ion-title size="small" color="medium">Hoje</ion-title>
     </ion-toolbar>
   </ion-header>
   <ion-toolbar color="secondary">
@@ -19,13 +19,13 @@
           <ion-card-title style="font-size: 15px">
             <strong>{{value.title}}</strong>
           </ion-card-title>
-          <button color="light" style="background-color: #fff">
-            <ion-icon src="/assets/Group357.svg" color="dark"></ion-icon>
+          <button class="no-border" color="light" style="background-color: #fff; ">
+            <ion-icon class="dot-side" src="/assets/out.svg" color="dark"></ion-icon>
           </button>
         </div>
         <div class="container">
           <ion-card-subtitle>Status: {{value.status}}</ion-card-subtitle>
-          <ion-card-subtitle>Status: {{value.locale}}</ion-card-subtitle>
+          <ion-card-subtitle>Local: {{value.locale}}</ion-card-subtitle>
         </div>
       </ion-card-header>
 
@@ -49,15 +49,15 @@
         </table>
         <div class="dropdown-divider"></div>
         <div class="container">
-          <ion-item>
-            <ion-avatar slot="start">
+          <ion-toolbar>
+            <ion-avatar class="profile" slot="start">
               <img src="{{value.imgUrl}}" />
             </ion-avatar>
             <ion-label>
               <h4>{{value.name}}</h4>
               <p>{{value.city}}</p>
             </ion-label>
-          </ion-item>
+          </ion-toolbar>
 
           <button class="btn btn-style">Ver Perfil</button>
         </div>

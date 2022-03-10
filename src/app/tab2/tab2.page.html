@@ -1,34 +1,31 @@
-<ion-header color="light">
-  <ion-toolbar color="light">
-    <ion-title class="ion-text-center">
-      <strong>Transações</strong>
-    </ion-title>
+<ion-header color="secondary" class="ion-no-border">
+  <ion-toolbar color="secondary">
+    <ion-searchbar class="searchbar"></ion-searchbar>
   </ion-toolbar>
 </ion-header>
 
 <ion-content color="secondary">
-  <ion-toolbar color="secondary">
-    <div class="container" style="background-color: secondary">
-      <ion-list color="secondary">
-        <ion-item *ngFor="let value of transactions" color="light">
-          <ion-label>
-            <h1>
-              <ion-text size="small" slot="start" class="ion-text-wrap">
-                <strong>{{value.title}}</strong>
-              </ion-text>
-            </h1>
-            <ion-text class="ion-text-wrap">{{value.name}}</ion-text>
-          </ion-label>
-          <ion-label slot="end">
-            <h1>
-              <ion-text size="small" slot="start" class="ion-text-wrap">
-                {{value.date}}
-              </ion-text>
-            </h1>
-            <ion-text class="ion-text-wrap">{{value.price}}</ion-text>
-          </ion-label>
-        </ion-item>
-      </ion-list>
-    </div>
-  </ion-toolbar>
+  <div style="background-color: var(--ion-color-secondary)">
+    <ion-text color="dark" slot="start">Categorias</ion-text>
+  </div>
+
+  <ion-grid>
+    <ion-row *ngFor="let item of categories">
+      <ion-col>
+        <div
+          class="container btn categorie"
+          style="background-image: url({{item.url}});"
+        >
+        <span>{{item.st}}</span>
+      </div>
+        
+      </ion-col>
+      <ion-col>
+        <div class="container categorie" style="background-image: url({{item.url}});">
+          <span>{{item.st}}</span>
+        </div>
+        
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

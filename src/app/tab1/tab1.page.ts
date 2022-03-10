@@ -7,60 +7,44 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
   constructor() {}
-  public form = [
+
+  public slides = [
     {
-      val: 'Desafio UX Design',
-      isChecked: true,
-      description: 'lorem ipsum dolor sit amet',
-      color: 'tertiary',
+      title: 'Titulo',
+      description: 'Descrição',
     },
     {
-      val: 'Sausage',
-      isChecked: false,
-      description: 'lorem ipsum dolor sit amet',
-      color: 'success',
+      title: 'Titulo',
+      description: 'Descrição',
     },
     {
-      val: 'Mushroom',
-      isChecked: false,
-      description: 'lorem ipsum dolor sit amet',
-      color: 'secondary',
+      title: 'Titulo',
+      description: 'Descrição',
+    },
+    {
+      title: 'Titulo',
+      description: 'Descrição',
+    },
+    {
+      title: 'Titulo',
+      description: 'Descrição',
+    },
+    {
+      title: 'Titulo',
+      description: 'Descrição',
     },
   ];
 
-  public form2 = [
+  public companies = [
     {
-      val: 'Desafio UX Design',
-      isChecked: true,
-      description: 'lorem ipsum dolor sit amet',
-      color: 'tertiary',
+      title: 'Titulo',
+      description: 'Descrição',
     },
     {
-      val: 'Entrevista',
-      isChecked: false,
-      description: 'lorem ipsum dolor sit amet',
-      color: 'success',
-    },
-    {
-      val: 'Contratação',
-      isChecked: false,
-      description: 'lorem ipsum dolor sit amet',
-      color: 'secondary',
-    },
-    {
-      val: 'Estudar',
-      isChecked: false,
-      description: 'lorem ipsum dolor sit amet',
-      color: 'tertiary',
-    },
-    {
-      val: 'Terminar front-end',
-      isChecked: false,
-      description: 'lorem ipsum dolor sit amet',
-      color: 'success',
+      title: 'Titulo',
+      description: 'Descrição',
     },
   ];
-
   public slideOpts: any = {
     speed: 400,
     slidesPerView: 3,

@@ -20,7 +20,7 @@ export class Tab3Page {
       transp: '$5',
       name: 'Thomas Wilson',
       city: 'São Paulo/SP',
-      imgUrl: 'https://randomuser.me/api/portraits/lego/4.jpg',
+      imgUrl: 'https://randomuser.me/api/portraits/men/9.jpg',
     },
   ];
 }

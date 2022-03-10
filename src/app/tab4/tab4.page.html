@@ -24,9 +24,17 @@
         class="list-style"
       >
         <ion-list color="secondary">
-          <ion-item button *ngFor="let value of menu">
+          <ion-item button [routerLink]="['info']">
             <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
-            <ion-label>{{value.title}}</ion-label>
+            <ion-label>Informações</ion-label>
+          </ion-item>
+          <ion-item button [routerLink]="['pix']">
+            <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
+            <ion-label>Chave Pix</ion-label>
+          </ion-item>
+          <ion-item button [routerLink]="['terms']">
+            <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
+            <ion-label>Politicas e Termos</ion-label>
           </ion-item>
         </ion-list>
       </div>

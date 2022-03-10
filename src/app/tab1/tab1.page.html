@@ -1,13 +1,39 @@
 <ion-header color="light">
   <ion-toolbar color="light">
     <div class="container">
-      <ion-thumbnail slot="start">
-        <ion-img [src]=""></ion-img>
-      </ion-thumbnail>
-      <ion-title class="ion-text-center"></ion-title>
+      <img src="/assets/shavers-logo.svg" width="50%" style="margin: 10%" />
     </div>
-    <strong></strong>
+    <ion-title slot="end" size="small"> São Paulo, SP</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content color="secondary"> </ion-content>
+<ion-content color="secondary">
+  <ion-toolbar color="secondary">
+    <ion-title size="small" color="medium"> Promoções </ion-title>
+    <ion-slides pager="false" [options]="slideOpts">
+      <ion-slide *ngFor="let entry of slides">
+        <div class="progress ion-text-left">
+          <span>{{entry.title}}</span>
+          <p>{{entry.description}}</p>
+        </div>
+      </ion-slide>
+    </ion-slides>
+  </ion-toolbar>
+
+  
+    <ion-list-header><ion-text color = "medium">Melhores Avaliados</ion-text></ion-list-header>
+
+    <ion-list class="list-style" >
+      <ion-item *ngFor="let val of companies">
+        <ion-avatar slot="start">
+          <img src="./avatar-finn.png" />
+        </ion-avatar>
+        <ion-label>
+          <h2>{{val.title}}</h2>
+          <p>{{val.description}}</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+ 
+ 
+</ion-content>

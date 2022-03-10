@@ -4,9 +4,13 @@ import { TabsPage } from './tabs.page';
 import { LoginComponent } from '../login/login.component';
 import { SignUpComponent } from '../sign-up/sign-up.component';
 
+
+
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'sign-up', component: SignUpComponent },
+
+  
   {
     path: 'tabs',
     component: TabsPage,
@@ -40,7 +44,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: '/tabs',
+    redirectTo: '/login',
     pathMatch: 'full',
   },
 ];
