@@ -167,4 +167,71 @@ ion-label{
     margin: 2.5%;
 
   }
+  
+}
+
+input::placeholder{ 
+  color: var(--ion-color-medium);
+  font-size: 14px;
+  
+}
+
+.gender-radio {
+  display: inline;
+  position: relative;
+  padding-left: 15px;
+
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.gender-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 13px;
+  width: 13px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.gender-radio:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.gender-radio input:checked ~ .checkmark {
+  background-color: var(--ion-color-primary);
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.gender-radio input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.gender-radio .checkmark:after {
+  top: 4px;
+  left: 4px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: white;
 }

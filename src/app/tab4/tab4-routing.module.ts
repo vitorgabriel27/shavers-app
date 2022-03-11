@@ -3,11 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { Tab4Page } from './tab4.page';
 import { InfoComponent } from '../info/info.component';
 import { TermsComponent } from '../terms/terms.component';
-import { PixComponent } from '../pix/pix.component';
 import { AdressComponent } from '../adress/adress.component';
-import { PortfolioComponent } from '../portfolio/portfolio.component';
-import { ServicesComponent } from '../services/services.component';
 import { EditInfoComponent } from '../edit-info/edit-info.component';
+
 
 const routes: Routes = [
   {
@@ -27,21 +25,10 @@ const routes: Routes = [
     component: TermsComponent,
   },
   {
-    path: 'pix',
-    component: PixComponent,
-  },
-  {
     path: 'adress',
     component: AdressComponent,
   },
-  {
-    path: 'portfolio',
-    component: PortfolioComponent,
-  },
-  {
-    path: 'services',
-    component: ServicesComponent,
-  },
+ 
 ];
 
 @NgModule({
