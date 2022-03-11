@@ -5,16 +5,20 @@
 </ion-header>
 
 <ion-content color="secondary">
-  <ion-toolbar color="secondary">
-    <ion-title></ion-title>
-    <div class="container w-100">
-      <button
-        class="btn btn-primary btn-shadow btn-style justify-center"
-        style="background-color: var(--ion-color-tertiary)"
+  <ion-toolbar color="secondary" class="container">
+    <ion-avatar class="profile">
+      <img src="https://randomuser.me/api/portraits/men/11.jpg" />
+    </ion-avatar>
+
+    <ion-label>
+      <ion-title
+      class="ion-text-center"
+      style="justify-text: justify"
+      color="dark"
+      ><strong>Thomas Wilson Silva</strong></ion-title
       >
-        <strong>VER PERFIL</strong>
-      </button>
-    </div>
+      
+    </ion-label>
   </ion-toolbar>
 
   <ion-content color="secondary">
@@ -24,13 +28,25 @@
         class="list-style"
       >
         <ion-list color="secondary">
-          <ion-item button [routerLink]="['info']">
+          <ion-item button [routerLink]="['edit-info']">
             <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
             <ion-label>Informações</ion-label>
           </ion-item>
           <ion-item button [routerLink]="['pix']">
             <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
             <ion-label>Chave Pix</ion-label>
+          </ion-item>
+          <ion-item button [routerLink]="['adress']">
+            <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
+            <ion-label>Endereço</ion-label>
+          </ion-item>
+          <ion-item button [routerLink]="['portfolio']">
+            <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
+            <ion-label>Portfólio</ion-label>
+          </ion-item>
+          <ion-item button [routerLink]="['services']">
+            <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
+            <ion-label>Serviços</ion-label>
           </ion-item>
           <ion-item button [routerLink]="['terms']">
             <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>

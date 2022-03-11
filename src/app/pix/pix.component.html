@@ -1,0 +1,49 @@
+<ion-header color="light" translucent>
+  <ion-toolbar color="light" class="ion-text-center">
+    <ion-title size="small">Informações de Conta</ion-title>
+    <ion-buttons slot="start">
+      <ion-button routerLink="..">
+        <ion-icon name="chevron-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="secondary">
+  <ion-toolbar color="secondary" class="list-style">
+    <div class="container">
+      <ion-img class="cimage" src="../assets/pix.svg"></ion-img>
+    </div>
+    
+    
+    
+      <ion-list color="secondary" *ngFor=" let v of pix">
+        
+        <ion-item>
+          <ion-label>
+            <h2>Chave Pix</h2>
+            <p>{{v.key}}</p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    
+  </ion-toolbar>
+
+  <ion-toolbar color="secondary" class="container">
+    <div>
+      <div id="pix" class="form-field">
+        <ion-label color="medium"> 
+          <ion-text>Nova Chave Pix</ion-text>
+        </ion-label>
+        <input
+          type="text"
+          class="form-control shadow-none without-border"
+          id="pix"
+          placeholder="Insira a sua chave pix"/>
+        
+      </div>
+    </div>
+  </ion-toolbar>
+
+  
+</ion-content>

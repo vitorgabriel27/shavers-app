@@ -38,7 +38,7 @@ export class Tab1Page {
   public companies = [
     {
       title: 'Titulo',
-      description: 'Descrição',
+      description: 'Descrição Barbearia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in mauris porta, pulvinar...',
     },
     {
       title: 'Titulo',

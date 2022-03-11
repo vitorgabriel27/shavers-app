@@ -1,6 +1,7 @@
 .container {
   display: flex;
   flex-direction: column;
+  position: relative;
 
   justify-content: center;
   align-items: center;
@@ -13,7 +14,12 @@
 
     width: 142px;
     height: 142px;
+
+    
+    z-index: 1;
+    
   }
+
 }
 .cimage{
   margin: auto;
@@ -148,7 +154,13 @@ ion-label{
   ion-title{
 
   font-weight: 300;
+  
   margin: 2%;
+  }
+
+  ion-text {
+    font-size: 12px;
+    font-weight: 500;
   }
   p{
     font-weight: 300;

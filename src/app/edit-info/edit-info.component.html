@@ -1,0 +1,59 @@
+<ion-header class="ion-text-center">
+  <ion-toolbar color="light">
+    <ion-buttons slot="start">
+      <ion-button routerLink="..">
+        <ion-icon name="chevron-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title size="small"><strong>Informações de Conta</strong></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="secondary">
+  <ion-toolbar color="secondary">
+    <div
+      style="background-color: var(--ion-color-secondary)"
+      class="container list-style"
+    >
+    <ion-avatar class="profile">
+      <img src="https://randomuser.me/api/portraits/men/11.jpg" />
+   
+    </ion-avatar>
+    <div>
+      <div id="pix" class="form-field">
+        <ion-label color="medium"> 
+          <ion-text>NOME DO SEU NEGÓCIO</ion-text>
+        </ion-label>
+        <input
+          type="text"
+          class="form-control shadow-none without-border"
+          id="pix"
+          placeholder="Insira o nome do seu negócio"/>
+        
+      </div>
+      <div id="datetime" class="form-field">
+        <ion-label color="medium"> 
+          <ion-text>QUANDO VOCÊ COMEÇOU A TRABALHAR NA ÁREA</ion-text>
+        </ion-label>
+        <input
+          type="date"
+          class="form-control shadow-none without-border"
+          id="datetime"
+          placeholder="DD/MM/AAAA"/>
+      
+      </div>
+      <div  class="form-field">
+        <ion-label color="medium"> 
+          <ion-text>DESCRIÇÃO</ion-text>
+        </ion-label>
+        <textarea
+          class="form-control shadow-none without-border"
+          id="description"
+          placeholder="Descrição do seu negócio"
+          rows="5" cols="33"></textarea>
+      </div>
+    </div>
+    </div>
+  </ion-toolbar>
+
+</ion-content>

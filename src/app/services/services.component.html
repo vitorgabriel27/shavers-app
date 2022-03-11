@@ -1,0 +1,49 @@
+<ion-header class="ion-text-center">
+  <ion-toolbar color="light">
+    <ion-buttons slot="start">
+      <ion-button routerLink="..">
+        <ion-icon name="chevron-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title size="small"><strong>Serviços</strong></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="secondary">
+  <ion-toolbar color="secondary">
+    <div
+      style="background-color: var(--ion-color-secondary)"
+      class="list-style"
+    >
+      <ion-list class="list-style">
+        <ion-item *ngFor="let val of services">
+          <ion-avatar slot="start">
+            <img src="./avatar-finn.png" />
+          </ion-avatar>
+          <ion-label>
+            <h2>{{ val.name }}</h2>
+            <p><strong>Duração:</strong> {{ val.duration }} min</p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+
+      <ion-toolbar color="secondary">
+      <div id="buttons" class="container">
+        <div>
+          <button
+            type="submit"
+            class="btn btn-primary btn-shadow btn-style"
+            style="background-color: var(--ion-color-primary);"
+            [routerLink] ="['']"
+          >
+            <a  class="btn-style" style="color: white">Adicionar Outro Serviço</a>
+          </button>
+        </div>
+        <ion-text color="medium">Recomendamos adicionar todos os serviços que você possa realizar</ion-text>
+      </div>
+      
+      </ion-toolbar>
+        
+    </div>
+  </ion-toolbar>
+</ion-content>
