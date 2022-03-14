@@ -1,6 +1,14 @@
 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   background-color: var(--ion-color-light-shade);
   height: 100vh;
+
+  img {
+    margin: 5% auto;
+  }
 }
 h1 {
   padding: 1% 1% 1% 10%;

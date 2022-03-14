@@ -1,6 +1,10 @@
+<main>
 <div class="container">
+
+  <img src="/assets/shavers-logo.svg" width="40%"/>
+ 
   <h1>Acesse sua conta de cliente</h1>
-  <p>Ainda não tem uma conta? <a href="../sign-up">Registre-se Agora</a></p>
+  <p>Ainda não tem uma conta? <a (click)="fazerCadastro()" >Registre-se Agora</a></p>
 
   <div>
     <div id="e-mail" class="form-field">
@@ -30,12 +34,15 @@
   <div id="buttons">
     <div id="btn-login" class="w-100">
       <button
+        (click)="fazerLogin()"
         type="submit"
         class="btn btn-primary btn-shadow btn-style w-75"
         style="background-color: var(--ion-color-tertiary)"
+        
       >
-        <a href="/tabs" class="btn-style" style="color: white">Entrar</a>
+        <a class="btn-style" style="color: white">Entrar</a>
       </button>
     </div>
   </div>
 </div>
+</main>

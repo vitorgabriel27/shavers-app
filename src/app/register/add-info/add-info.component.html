@@ -1,11 +1,13 @@
-<ion-header class="ion-text-center">
+<ion-header class="ion-text-center ion-no-border">
   <ion-toolbar color="light">
     <ion-buttons slot="start">
-      <ion-button routerLink="..">
-        <ion-icon name="chevron-back-outline"></ion-icon>
+      <ion-button routerLink="../add-adress">
+        <ion-icon color="dark"  name="chevron-back-outline"></ion-icon>
       </ion-button>
     </ion-buttons>
-    <ion-title size="small"><strong>Informações de Conta</strong></ion-title>
+    <div class="container">
+      <ion-title size="small"><strong>Informações Pessoais</strong></ion-title>
+    </div>
   </ion-toolbar>
 </ion-header>
 
@@ -15,10 +17,7 @@
       style="background-color: var(--ion-color-secondary)"
       class="container list-style"
     >
-    <ion-avatar class="profile">
-      <img src="https://randomuser.me/api/portraits/men/11.jpg" />
-   
-    </ion-avatar>
+
     <div>
       <div id="pix" class="form-field">
         <ion-label color="medium"> 
@@ -72,3 +71,17 @@
   </ion-toolbar>
 
 </ion-content>
+
+<ion-footer class="ion-text-center ion-no-border">
+  <ion-toolbar color="secondary">
+    <div class="sbutton">
+      <button
+        class="btn btn-primary btn-shadow btn-style"
+        style="background-color: var(--ion-color-tertiary);"
+        routerLink = "add-adress"
+      >
+        <a  class="btn-style" [routerLink] = "['../add-profile']">Próximo</a>
+      </button>
+    </div>
+  </ion-toolbar>
+</ion-footer>

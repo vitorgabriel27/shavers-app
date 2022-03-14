@@ -1,7 +1,9 @@
-
+<main>
 <div class="container">
+
+  <img src="/assets/shavers-logo.svg" width="40%"/>
   <h1>Registre-se como um cliente</h1>
-  <p>Já tem uma conta profissional? <a> Acesse Aqui</a></p>
+  <p>Já tem uma conta profissional? <a (click)="fazerLogin()"> Acesse Aqui</a></p>
   
   <div>
   
@@ -36,24 +38,25 @@
   <div id="buttons">
     <div id="btn-login" class="w-100">
       <button
+        (click)="fazerCadastro()"
         type="submit"
         class="btn btn-primary btn-shadow btn-style w-75"
         style="background-color: var(--ion-color-tertiary)"
-        > <a href="/tabs" class="btn-style" style="color: white">Registrar</a>  
+        > <a  class="btn-style" style="color: white">Registrar</a>  
         
       </button>
       <div class="w-100">
       <p
       
         style=" cursor: pointer; font-size: 12px; color: rgba(0, 0, 0, 0.5);"
-        >Ao clicar Registrar, como concorda e aceita os <a>Termos de Uso</a> e <a>Política de Privacidade</a></p
+        >Ao clicar Registrar, como concorda e aceita os <a (click)="termos()">Termos de Uso</a> e <a>Política de Privacidade</a></p
       >
     </div>
     </div>
    
   </div>
   </div>
-  
+</main>
   
   
   

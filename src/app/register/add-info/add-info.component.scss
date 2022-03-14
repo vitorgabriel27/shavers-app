@@ -139,6 +139,16 @@ ion-slides {
   }
 }
 
+.sbutton {
+  display: flex;
+  justify-content: flex-end;
+
+  .btn-style {
+    border-radius: 40px;
+    color: var(--ion-color-light);
+  }
+}
+
 ion-label {
   margin: 2%;
   ion-title {

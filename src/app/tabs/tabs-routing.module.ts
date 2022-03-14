@@ -7,10 +7,13 @@ import { SignUpComponent } from '../sign-up/sign-up.component';
 
 
 const routes: Routes = [
-  { path: 'login', component: LoginComponent },
-  { path: 'sign-up', component: SignUpComponent },
-
-  
+  {
+    path: 'login', component: LoginComponent,
+  },
+  {
+    path: 'sign-up', component: SignUpComponent,
+  },
+ 
   {
     path: 'tabs',
     component: TabsPage,
