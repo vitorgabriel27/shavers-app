@@ -1,0 +1,44 @@
+<ion-header class="ion-text-center ion-no-border">
+  <ion-toolbar color="light">
+    <ion-buttons slot="start">
+      <ion-button routerLink="..">
+        <ion-icon color="dark" name="chevron-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <div class="container">
+      <ion-title size="small"><strong>Endereço</strong></ion-title>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="secondary">
+  <ion-toolbar color="secondary" class="container">
+    <div>
+      <div id="adress" class="form-field">
+        <ion-label color="medium">
+          <ion-text>ENDEREÇO</ion-text>
+        </ion-label>
+        <input
+          type="text"
+          class="form-control shadow-none without-border"
+          id="adress"
+          placeholder="Insira seu endereço"
+        />
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-content>
+
+<ion-footer class="ion-text-center ion-no-border">
+  <ion-toolbar color="secondary">
+    <div class="sbutton">
+      <button
+        class="btn btn-primary btn-shadow btn-style"
+        style="background-color: var(--ion-color-tertiary);"
+        routerLink = "add-adress"
+      >
+        <a  class="btn-style" [routerLink] = "['../add-info']">Próximo</a>
+      </button>
+    </div>
+  </ion-toolbar>
+</ion-footer>

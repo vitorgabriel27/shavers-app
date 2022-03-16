@@ -1,0 +1,74 @@
+<ion-header class="ion-text-center">
+  <ion-toolbar color="light">
+    <ion-buttons slot="start">
+      <ion-button routerLink="..">
+        <ion-icon name="chevron-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title size="small"><strong>Informações de Conta</strong></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="secondary">
+  <ion-toolbar color="secondary">
+    <div
+      style="background-color: var(--ion-color-secondary)"
+      class="container list-style"
+    >
+    <ion-avatar class="profile">
+      <img src="https://randomuser.me/api/portraits/men/11.jpg" />
+   
+    </ion-avatar>
+    <div>
+      <div id="pix" class="form-field">
+        <ion-label color="medium"> 
+          <ion-text>NOME COMPLETO</ion-text>
+        </ion-label>
+        <input
+          type="text"
+          class="form-control shadow-none without-border"
+          id="pix"
+          placeholder="Insira seu nome completo"/>
+        
+      </div>
+      <div id="datetime" class="form-field">
+        <ion-label color="medium"> 
+          <ion-text>DATA DE NASCIMENTO</ion-text>
+        </ion-label>
+        <input
+          type="date"
+          class="form-control shadow-none without-border"
+          id="datetime"
+          placeholder="DD/MM/AAAA"/>
+      
+      </div>
+
+      <div>
+        <ion-label color="medium"> 
+          <ion-text>GÊNERO</ion-text>
+        </ion-label>
+      </div>
+      <div>
+        <label style="color: var(--ion-color-medium);"  class="gender-radio">Masculino
+          <input type="checkbox" checked="checked">
+          <span class="checkmark"></span>
+        </label>
+        <label style="color: var(--ion-color-medium);"  class="gender-radio">Feminino
+          <input type="checkbox" >
+          <span class="checkmark"></span>
+        </label>
+        <label style="color: var(--ion-color-medium);" class="gender-radio">Não-binario
+          <input type="checkbox" >
+          <span class="checkmark"></span>
+        </label>
+        <input
+          type="text"
+          class="form-control shadow-none without-border"
+          id="gender"
+          placeholder="Especifique o seu gênero (Opcional)"/>
+      </div>
+    </div>
+    </div>
+  </ion-toolbar>
+
+</ion-content>

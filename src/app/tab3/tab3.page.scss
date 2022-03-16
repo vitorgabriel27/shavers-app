@@ -1,0 +1,41 @@
+table td,
+table th {
+  border: none !important;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  padding: 2%;
+
+  .profile {
+    margin: 5px;
+  }
+  .btn-style {
+    margin: 5%;
+    background-color: #fff;
+    color: var(--ion-color-dark);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+
+  .no-border:focus{
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+  }
+  .dot-side:hover{
+  
+  }
+  ion-label {
+    h4 {
+      font-size: 13px;
+    }
+    p {
+      font-size: 11px;
+    }
+  }
+}

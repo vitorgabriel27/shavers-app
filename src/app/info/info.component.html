@@ -1,0 +1,58 @@
+<ion-content color="secondary">
+  <ion-header color="light"  translucent>
+    <ion-toolbar color="light" class="ion-text-center">
+      <ion-title size="small">Informações de Conta</ion-title>
+      <ion-buttons slot="start">
+        <ion-button routerLink="..">
+          <ion-icon name="chevron-back-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-header>
+    <ion-toolbar color="secondary" class="container">
+      <ion-avatar class="profile">
+        <img src="https://randomuser.me/api/portraits/men/11.jpg" />
+      </ion-avatar>
+    
+      <ion-label>
+        <ion-title
+        class="ion-text-center"
+        style="justify-text: justify"
+        color="dark"
+        ><strong>Barbearia Pereira e Silva</strong></ion-title
+        >
+        <p color="dark">
+          Descrição Barbearia. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Suspendisse in mauris porta, pulvinar urna ac,
+          gravida nulla.
+        </p>
+      </ion-label>
+    </ion-toolbar>
+  </ion-header>
+  <ion-toolbar color="secondary">
+    <ion-title color="dark">Portfólio</ion-title>
+    <ion-slides pager="false" [options]="slideOpts">
+      <ion-slide *ngFor = "let entry of portfolio">
+        <div class="progress ion-text-left">
+          <span>{{ entry.title }}</span>
+        </div>
+      </ion-slide>
+    </ion-slides>
+  </ion-toolbar>
+  <ion-toolbar color="secondary">
+    <ion-title color="dark">Serviços</ion-title>
+    <ion-list color="secondary">
+      <ion-item *ngFor="let val of services">
+        <ion-avatar slot="start">
+          <img src="./avatar-finn.png" />
+        </ion-avatar>
+        <ion-label>
+          <h2>{{ val.title }}</h2>
+          <p>{{ val.desc }}</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-toolbar>
+</ion-content>

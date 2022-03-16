@@ -1,0 +1,62 @@
+<ion-header class="ion-text-center">
+  <ion-toolbar color="light">
+    <ion-title><strong>Conta</strong></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="secondary">
+  <ion-toolbar color="secondary" class="container">
+    <ion-avatar class="profile">
+      <img src="https://randomuser.me/api/portraits/men/11.jpg" />
+    </ion-avatar>
+
+    <ion-label>
+      <ion-title
+      class="ion-text-center"
+      style="justify-text: justify"
+      color="dark"
+      ><strong>Thomas Wilson Silva</strong></ion-title
+      >
+      
+    </ion-label>
+  </ion-toolbar>
+
+  <ion-content color="secondary">
+    <ion-toolbar color="secondary">
+      <div
+        style="background-color: var(--ion-color-secondary)"
+        class="list-style"
+      >
+        <ion-list color="secondary">
+          <ion-item button [routerLink]="['edit-info']">
+            <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
+            <ion-label>Informações</ion-label>
+          </ion-item>
+         
+          <ion-item button [routerLink]="['adress']">
+            <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
+            <ion-label>Endereço</ion-label>
+          </ion-item>
+         
+          <ion-item button [routerLink]="['terms']">
+            <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
+            <ion-label>Politicas e Termos</ion-label>
+          </ion-item>
+        </ion-list>
+      </div>
+      <ion-item button [routerLink]="['/login']">
+        <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
+        <ion-label color="warning"><strong>Encerrar Sessão</strong></ion-label>
+      </ion-item>
+    </ion-toolbar>
+
+    <ion-footer color="secondary">
+      <ion-toolbar color="secondary">
+        <ion-title color="dark" size="small" class="ion-text-center">
+        v.1.0.0</ion-title
+        >
+      </ion-toolbar>
+    </ion-footer>
+  </ion-content>
+  
+</ion-content>

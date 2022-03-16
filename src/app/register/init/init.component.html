@@ -1,0 +1,44 @@
+<ion-header class="ion-text-center ion-no-border">
+  <ion-toolbar color="light">
+    <ion-buttons slot="start">
+      <ion-button routerLink="/sign-up">
+        <ion-icon color="dark"  name="chevron-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <div class="container">
+      <ion-title size="small"><strong>Localização</strong></ion-title>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="secondary" >
+  <ion-toolbar color="secondary" class="list-style">
+    <div class="container">
+      <ion-img class="cimage" src="../assets/location.svg"></ion-img>
+    </div>
+    
+    
+  </ion-toolbar>
+
+  <ion-toolbar color="secondary">
+    <div class="container">
+      <ion-label>
+        <h1><strong> Vamos cadastrar você como um cliente </strong></h1>
+        <p>Habilite sua localização para encontrar profissionais próximos a você</p>
+      </ion-label>
+    </div>
+  </ion-toolbar>
+  <ion-toolbar color="secondary">
+    <div class="container">
+      <button
+        class="btn btn-primary btn-shadow btn-style"
+        style="background-color: var(--ion-color-tertiary);"
+        routerLink = "add-adress"
+      >
+        <a  class="btn-style" [routerLink] = "['../add-adress']">Habilitar</a>
+      </button>
+    </div>
+  </ion-toolbar>
+
+  
+</ion-content>

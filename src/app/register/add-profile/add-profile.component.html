@@ -1,0 +1,32 @@
+<ion-header class="ion-text-center ion-no-border">
+  <ion-toolbar color="light">
+    <ion-buttons slot="start">
+      <ion-button routerLink="../add-info">
+        <ion-icon color="dark"  name="chevron-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <div class="profile-container">
+      <ion-title size="small"><strong>Foto de Perfil</strong></ion-title>
+      <a routerLink="../verify"><ion-text>Pular</ion-text></a>
+    </div>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="secondary">
+
+</ion-content>
+
+<ion-footer class="ion-text-center ion-no-border">
+  <ion-toolbar color="secondary">
+    <div class="sbutton">
+      <button
+        class="btn btn-primary btn-shadow btn-style"
+        style="background-color: var(--ion-color-tertiary);"
+        routerLink = "add-adress"
+      >
+        <a  class="btn-style" [routerLink] = "['../verify']">Próximo</a>
+      </button>
+    </div>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,38 @@
+<ion-header class="ion-text-center ion-no-border">
+  <ion-toolbar color="light">
+    <ion-buttons slot="start">
+      <ion-button routerLink="../add-profile">
+        <ion-icon color="dark"  name="chevron-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <div class="container">
+      <ion-title size="small"><strong>Último passo</strong></ion-title>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="secondary">
+  <ion-toolbar color="secondary">
+    <div class="container">
+      <ion-label>
+        <h1><strong> Enviamos um código  de verificação </strong></h1>
+        <p>Enviamos o código para: <a>email@email.com</a></p>
+      </ion-label>
+    </div>
+  </ion-toolbar>
+
+</ion-content>
+
+<ion-footer class="ion-text-center ion-no-border">
+  <ion-toolbar color="secondary">
+    <div class="sbutton">
+      <button
+        class="btn btn-primary btn-shadow btn-style"
+        style="background-color: var(--ion-color-tertiary);"
+        [routerLink] = "['/login']"
+      >
+        <a  class="btn-style" [routerLink] = "['/login']">Confirmar</a>
+      </button>
+    </div>
+  </ion-toolbar>
+</ion-footer>

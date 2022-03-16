@@ -1,0 +1,87 @@
+<ion-header class="ion-text-center ion-no-border">
+  <ion-toolbar color="light">
+    <ion-buttons slot="start">
+      <ion-button routerLink="../add-adress">
+        <ion-icon color="dark"  name="chevron-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <div class="container">
+      <ion-title size="small"><strong>Informações Pessoais</strong></ion-title>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="secondary">
+  <ion-toolbar color="secondary">
+    <div
+      style="background-color: var(--ion-color-secondary)"
+      class="container list-style"
+    >
+
+    <div>
+      <div id="pix" class="form-field">
+        <ion-label color="medium"> 
+          <ion-text>NOME COMPLETO</ion-text>
+        </ion-label>
+        <input
+          type="text"
+          class="form-control shadow-none without-border"
+          id="pix"
+          placeholder="Insira seu nome completo"/>
+        
+      </div>
+      <div id="datetime" class="form-field">
+        <ion-label color="medium"> 
+          <ion-text>DATA DE NASCIMENTO</ion-text>
+        </ion-label>
+        <input
+          type="date"
+          class="form-control shadow-none without-border"
+          id="datetime"
+          placeholder="DD/MM/AAAA"/>
+      
+      </div>
+
+      <div>
+        <ion-label color="medium"> 
+          <ion-text>GÊNERO</ion-text>
+        </ion-label>
+      </div>
+      <div>
+        <label style="color: var(--ion-color-medium);"  class="gender-radio">Masculino
+          <input type="checkbox" checked="checked">
+          <span class="checkmark"></span>
+        </label>
+        <label style="color: var(--ion-color-medium);"  class="gender-radio">Feminino
+          <input type="checkbox" >
+          <span class="checkmark"></span>
+        </label>
+        <label style="color: var(--ion-color-medium);" class="gender-radio">Não-binario
+          <input type="checkbox" >
+          <span class="checkmark"></span>
+        </label>
+        <input
+          type="text"
+          class="form-control shadow-none without-border"
+          id="gender"
+          placeholder="Especifique o seu gênero (Opcional)"/>
+      </div>
+    </div>
+    </div>
+  </ion-toolbar>
+
+</ion-content>
+
+<ion-footer class="ion-text-center ion-no-border">
+  <ion-toolbar color="secondary">
+    <div class="sbutton">
+      <button
+        class="btn btn-primary btn-shadow btn-style"
+        style="background-color: var(--ion-color-tertiary);"
+        routerLink = "add-adress"
+      >
+        <a  class="btn-style" [routerLink] = "['../add-profile']">Próximo</a>
+      </button>
+    </div>
+  </ion-toolbar>
+</ion-footer>

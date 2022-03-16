@@ -1,17 +1,67 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 3
+<ion-header color="light">
+  <ion-toolbar color="light">
+    <ion-title class="ion-text-center">
+      <strong>Agenda</strong>
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
+<ion-content color="secondary">
+  <ion-header>
+    <ion-toolbar color="secondary">
+      <ion-title size="small" color="medium">Hoje</ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-toolbar color="secondary">
+    <ion-card *ngFor="let value of schedules">
+      <ion-card-header>
+        <div class="container">
+          <ion-card-title style="font-size: 15px">
+            <strong>{{value.title}}</strong>
+          </ion-card-title>
+          <button class="no-border" color="light" style="background-color: #fff; ">
+            <ion-icon class="dot-side" src="/assets/out.svg" color="dark"></ion-icon>
+          </button>
+        </div>
+        <div class="container">
+          <ion-card-subtitle>Status: {{value.status}}</ion-card-subtitle>
+          <ion-card-subtitle>Local: {{value.locale}}</ion-card-subtitle>
+        </div>
+      </ion-card-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+      <ion-card-content>
+        <table
+          class="table"
+          style="font-size: 12px; color: var(--ion-color-medium)"
+        >
+          <tr>
+            <th>Data</th>
+            <th>Hora</th>
+            <th>Serviço</th>
+            <th>Trajeto</th>
+          </tr>
+          <tr>
+            <td>{{value.data}}</td>
+            <td>{{value.time}}</td>
+            <td>{{value.price}}</td>
+            <td>{{value.transp}}</td>
+          </tr>
+        </table>
+        <div class="dropdown-divider"></div>
+        <div class="container">
+          <ion-toolbar>
+            <ion-avatar class="profile" slot="start">
+              <img src="{{value.imgUrl}}" />
+            </ion-avatar>
+            <ion-label>
+              <h4>{{value.name}}</h4>
+              <p>{{value.city}}</p>
+            </ion-label>
+          </ion-toolbar>
+
+          <button class="btn btn-style">Ver Perfil</button>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </ion-toolbar>
 </ion-content>

@@ -1,0 +1,48 @@
+<main>
+<div class="container">
+
+  <img src="/assets/shavers-logo.svg" width="40%"/>
+ 
+  <h1>Acesse sua conta de cliente</h1>
+  <p>Ainda não tem uma conta? <a routerLink="/sign-up" >Registre-se Agora</a></p>
+
+  <div>
+    <div id="e-mail" class="form-field">
+      <label for="e-mail"> E-mail </label>
+      <input
+        type="e-mail"
+        class="form-control shadow-none without-border"
+        id="e-mail"
+        placeholder="E-mail"
+      />
+      <div class="underline"></div>
+    </div>
+    <div id="senha" class="form-field">
+      <label for="senha"> Senha </label>
+      <input
+        type="password"
+        class="form-control shadow-none without-border"
+        id="senha"
+        placeholder="Senha"
+      />
+
+      <!--<i-feather name="eye-off" style="width: 15px;"></i-feather>-->
+      <div class="underline"></div>
+    </div>
+  </div>
+
+  <div id="buttons">
+    <div id="btn-login" class="w-100">
+      <button
+        routerLink="/tabs/tab1"
+        type="submit"
+        class="btn btn-primary btn-shadow btn-style w-75"
+        style="background-color: var(--ion-color-tertiary)"
+        
+      >
+        <a class="btn-style" style="color: white">Entrar</a>
+      </button>
+    </div>
+  </div>
+</div>
+</main>

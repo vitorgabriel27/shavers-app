@@ -1,0 +1,55 @@
+<ion-header class="ion-text-center">
+  <ion-toolbar color="light">
+    <ion-buttons slot="start">
+      <ion-button routerLink="..">
+        <ion-icon name="chevron-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title size="small"><strong>Informações de Conta</strong></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="secondary">
+  <ion-toolbar color="secondary">
+    <div
+      style="background-color: var(--ion-color-secondary)"
+      class="list-style"
+    >
+      <ion-grid>
+        <ion-row *ngFor="let item of images">
+          <ion-col>
+            <div
+              class="container btn categorie"
+              style="background-color: #fff; background-image: url({{ item.imgUrl }});"
+            >
+            <span>
+              <button
+              type="submit"
+              class="btn btn-primary btn-shadow btn-style"
+              style="background-color: var(--ion-color-tertiary)"
+              >
+              <a [routerLink] ="['']" class="btn-style" style="color: white">Trocar</a>
+              </button>
+            </span>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div
+              class="container categorie"
+              style="background-color: #fff; background-image: url({{ item.imgUrl }});"
+            >
+              <span>
+                <button
+                type="submit"
+                class="btn btn-primary btn-shadow btn-style"
+                style="background-color: var(--ion-color-tertiary)"
+                >
+                <a [routerLink] ="['']"  class="btn-style" style="color: white">Trocar</a>
+              </button></span>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </ion-toolbar>
+</ion-content>
